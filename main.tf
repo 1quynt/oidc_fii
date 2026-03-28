@@ -121,7 +121,7 @@ resource "aws_security_group" "cloudpulse_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   # --- PRIVATE ACCESS (Self-Referencing) ---
-  # These ports are only reachable BY the instances inside this SG.
+  # These ports are only reachable BY the instances inside this SG..
 
   ingress {
     description = "Allow all internal traffic between cluster nodes"
